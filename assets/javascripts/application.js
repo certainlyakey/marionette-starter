@@ -1,6 +1,3 @@
-//based on the book https://leanpub.com/marionette-gentle-introduction
-//full app from the book here https://leanpub.com/marionette-gentle-introduction
-
 //INITIALIZING THE APP
 
 	//creating the main object that will contain everything dynamic
@@ -28,7 +25,8 @@
 	//CONTACTS: MODEL 
 	//linking a collection to model
 	ContactManager.ContactsCollection = Backbone.Collection.extend({
-		model: ContactManager.Contact
+		model: ContactManager.Contact,
+		comparator: "firstName" //sorting by...
 	});
 
 	//SINGLE CONTACT: VIEW 
@@ -51,14 +49,14 @@
 		//creating a collection of real data based on our created model
 		var contacts = new ContactManager.ContactsCollection([
 		{
+			firstName: "Kot",
+			lastName: "Jopkin"
+		},
+		{
 			firstName: "Alice",
 			lastName: "Arten",
 			phoneNumber: "555-0184"
-		}, 
-		{
-			firstName: "Kot",
-			lastName: "Jopkin"
-		}
+		},
 		]);
 
 		//putting the real data in our created view

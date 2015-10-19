@@ -1,1 +1,1 @@
-This is a starter, very simple app based on example app from [the book](https://leanpub.com/marionette-gentle-introduction) by David Sulc.
+This is a starter, very simple app based on example app from [the book](https://leanpub.com/marionette-gentle-introduction) by David Sulc. Full app from the book is [here](https://github.com/davidsulc/marionette-gentle-introduction/).
