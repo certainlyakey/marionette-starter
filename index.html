@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"> <head>
+<meta charset="utf-8">
+<title>Marionette Contact Manager</title>
+<link href="./assets/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+<div class="navbar navbar-inverse navbar-fixed-top"> <div class="navbar-inner">
+<div class="container">
+<span class="brand">Contact manager</span>
+        </div>
+      </div>
+</div>
+<div class="container" id="main-region">
+<p>Waiting for the Marionette app to load... If it's not loading for a long time, try to enable Javascript.</p> 
+</div>
+
+<script type="text/template" id="contact-list-item">
+  <%= firstName %> <%= lastName %> — <%= phoneNumber %>
+</script>
+
+<script src="./assets/javascripts/vendor/jquery.js"></script>
+<script src="./assets/javascripts/vendor/underscore.js"></script>
+<script src="./assets/javascripts/vendor/backbone.js"></script>
+<script src="./assets/javascripts/vendor/backbone.marionette.js"></script>
+<script src="./assets/javascripts/application.js"></script>
+  </body>
+</html>

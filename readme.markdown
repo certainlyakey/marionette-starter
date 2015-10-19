@@ -1,0 +1,1 @@
+This is a starter, very simple app based on example app from [the book](https://leanpub.com/marionette-gentle-introduction) by David Sulc.
